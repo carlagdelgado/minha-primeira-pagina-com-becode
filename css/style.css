@@ -1,0 +1,152 @@
+/* tag body */
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #f1f1f1;
+    color: #666666;
+    font-family: "Source Sans Pro", sans-serif; 
+    font-size: 150%;
+    font-weight: 200;
+    line-height: 1.65em; 
+}
+#header {
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-color: #444444;
+    text-align: center;
+    min-height: 100vh;
+}
+#header .inner{
+	margin: auto; /* Margin auto alinha os elementos 'inner' ao centro */
+	padding-top: 13%; /* Espaçamento de 13% do top */
+	z-index: 1000; /* Posição relativa ao eixo Z, para ficar na frente de todos os elementos */
+}
+#header h1 {
+    font-size: 2cm; /* Tamanho da fonte do h1 será de 2 centimetros*/
+    padding: 0em 0.5em 0em 0.25em; /* Espaçamento: top=0em right=0.5em bottom=0em left=0.25em */
+    font-family: "Source Sans Pro", sans-serif; /* duas famílias de fonte, uma títular e uma reserva
+    caso o usuário não possua a primeira fonte instalada em seu computador. */
+    color: #ffffff; /* Cor do texto em hexadecimal */
+    font-weight: 900; /* Espessura da fonte, quanto mais, mais grossa será a fonte */
+    line-height: 70px; /* Define 70px para o tamanho da linha dessa tag h1 */
+    text-transform: uppercase; /* Trasforma todas as letras do texto em maiúsculas */
+}
+#header h3 {
+    font-family: "Source Sans Pro", sans-serif; /* duas famílias de fonte, uma títular e uma reserva
+    caso o usuário não possua a primeira fonte instalada em seu computador. */
+    color: #cccccc; /* Cor do texto em hexadecimal */
+    font-weight: 400; /* Espessura da fonte, quanto mais, mais grossa será a fonte */
+    margin: 0; /* retira qualquer margem padrão da tag */
+    padding:0; /* retira qualquer padding padrão da tag */
+}
+#header nav {
+	background-color: #000000; /* Cor de fundo em hexadecimal */
+    width: 100%; /* Largura 100% do tamanho da tela */
+    margin: 0 auto; /* Margem igual a 0 acima e abaixo e automático
+    na horizontal para alinhar o elemento ao centro */ 
+    padding-top: 15px; /* Padding de 15px acima da tag nav */
+	padding-bottom: 15px;  /* Padding de 15px abaixo da tag nav */  
+    z-index: 1000; /* Posição relativa ao eixo Z, para ficar na
+    frente de todos os elementos */
+}
+
+#header nav a {
+	margin-right: 25px; /* Margem de 25 pixel a direita de
+	todos os elementos com a tag <a>, contidos em #header */
+    color: #cccccc; /* Cor do texto em hexadecimal */
+    font-weight: 600; /* Espessura do texto */
+}
+#wrapper {
+	width: 40em; /* Largura de 40em */
+	margin: 0 auto; /* Margem igual a 0 para top e bottom e auto para alinhar o elemento ao centro */
+	padding-top: 0; /* Espaçamento do topo de 0 */
+	padding-right: 5em; /* Espaçamento da direita de 5em */
+	padding-bottom: 2em; /* Espaçamento inferior de 2em */
+	padding-left: 5em; /* Espaçamento da esquerda de 5em  */
+
+/* Os espaçamentos acima poderiam ser escrito da seguinte forma: padding: 0 5em 2em 5em;  */
+
+}
+#intro {
+	padding: 4em 4em 2em 4em; /* Espaçamento: top=4em right=4em bottom=2em left=4em */
+	background-color: #ffffff; /* Cor de fundo em hexadecimal */
+	border-radius: 10px; /* Borda com 10 pixel de arredondamento */
+	text-align: center; /* Texto alinhado ao centro */
+	margin-bottom: 4em; /* Margem inferior de 4em */
+	margin-top: 2em; /*margem superior de 2em */
+}
+
+.items {
+	display: flex; /* Define o tipo de caixa de renderização usada pelo elemento. */
+	width: calc(100% + 2em); /* Calculo de largura */
+	margin: -2em 0 0 -2em; /* Margem: top=-2em right=0 bottom=0 left=-2em */
+}
+
+.item {
+	padding: 3em 3em 1em 3em; /* Espaçmento: top=3em right=3em bottom=1em left=3em */
+	background-color: #ffffff; /*Cor de fundo em hexadecimal*/
+	border-radius: 4px; /* Borda com 4 pixel de arredondamento */
+	text-align: center; /* Texto alihado ao centro */
+	margin: 2em 0 0 2em; /* margem: top=2em right=0 bottom=0 left=2em */
+	width: 50%; /* largura */
+}
+
+.item header {
+    margin: -3em 0 3em -3em; /* Margem: top=-3em right=0 bottom=3em left=-3em */
+    width: calc(100% + 6em); /* Calculo de largura */
+    height: 10em;	/* 10 em de Altura */
+    position: relative; /* Tipo de método utilizado para o posicionamento */
+    overflow: hidden; /* Esconde elementos no header caso ultrapassem as margens */
+}
+
+.item header a {
+	background-size: cover; /* Para a imagem cobrir o fundo ao máximo */
+	background-position: center; /* Centraliza o background (fundo) */
+	background-repeat: no-repeat;/* Para não repetir a exibição da imagem no fundo */
+	position: absolute; /* Especifica o método utilizado para posicionamento */
+	width: 100%; /* Largura */
+	height: 100%; /* Altura  */
+	display: block; /* Define o tipo de caixa de renderização usada pelo elemento.  */
+}
+#footer {	
+    margin: 4em auto 0 auto; /* Margem: top=4em right=auto bottom=0 left=auto */
+   width: 40em; /* Largura */
+   text-align: center; /* Texto alinhado ao centro */
+   font-size: 0.8em; /* Tamanho da fonte */
+       
+}
+
+.button {
+	border-radius: 4px; /* Borda com 4 pixel de arredondamento */
+	display: block; /* Define o tipo de caixa de renderização usada pelo elemento.  */
+	font-weight: 400; /* Espessura do texto */
+	padding: 1em; /* Espaçamento de 1em para top, right, bottom e left */
+	text-align: center; /* Texto alinhado ao centro */
+	text-transform: uppercase; /* Trasforma todas as letras do texto em maiúsculas */
+	letter-spacing: 0.325em; /* Espaçamento entre as letras do texto */
+	font-size: 0.725em; /* Tamanho da fonte */
+	background-color: transparent; /* Cor de fundo trasparente */
+	border: 2px solid #9a9a9a; /* Borda do botão espessura=2px estilo=solid e cor=#666666 */
+	color: #9a9a9a; /* Cor do texto em hexadecimal */
+}
+
+.button:hover {
+	color: black; /* Cor do texto em hexadecimal */
+	border: 2px solid black;/* Borda do botão espessura=2px
+	estilo=solid e cor=#EF6480 */
+}
+
+ul {
+	padding-left: 0; /* Espaçamento da esquerda 0 */
+}
+ul li {
+	display: inline-block; /* Utilizado para
+	remover o ponto padrão da tag <li> */
+}
+a {
+	text-decoration: none; /* Remove a estilização de texto padrão das tags <a> */
+}
+#header nav a:hover, a:hover {
+	color: #00649c; /* Cor do texto em hexadecimal, cor da Becode :) */
+}
